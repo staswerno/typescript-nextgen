@@ -98,10 +98,16 @@ console.log(addNumbers);
 
 // creating variables from array
 // doesn't change original array
+// elements pulled out IN ORDER
 
 const [hobby1, hobby2, ...remainingHobbies] = hobbies;
 
 console.log(hobby1);
 console.log(hobby2);
 
-const { Name, Age } = person;
+// order NOT GUARANTEED, by property name
+// renaming/alias first variable (don't have to, like age)
+
+const { Name: firstName, Age } = person;
+
+console.log(firstName, Age, person);
